@@ -2,6 +2,62 @@ angular.module('starter.controllers', [])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
 
+    // Family functions
+    $scope.addFamilyMember = addFamilyMember;
+    $scope.editFamilyMember = editFamilyMember;
+    $scope.deleteFamilyMember = deleteFamilyMember;
+    $scope.payFamilyMember = payFamilyMember;
+    var addFamilyMember = function(){}
+    var editFamilyMember = function(){}
+    var deleteFamilyMember = function(){}
+    var payFamilyMember = function(){}
+    
+    
+    // Chore functions
+    $scope.startAddChore  = startAddChore;
+    $scope.cancelChoreWork = cancelChoreWork;
+    $scope.addChore = addChore;
+    $scope.startEdit = startEditChore;
+    $scope.saveChore = saveChore;
+    $scope.startRemove = startRemoveChore;
+    $scope.removeChore = removeChore;
+    $scope.claimChore = claimChore;
+    $scope.startUnclaimChore = startUnclaimChore;
+    $scope.unclaimChore = unclaimChore;
+    $scope.assignChore = assignChore;
+    var startAddChore = function() {}
+    var cancelChoreWork = function(){}
+    var addChore = function() {}
+    var startEditChore = function() {}
+    var saveChore = function() {}
+    var startRemoveChore = function() {}
+    var removeChore = function() {}
+    var claimChore = function() {}
+    var startUnclaimChore = function() {}
+    var unclaimChore = function() {}
+    var assignChore = function() {}
+
+    // Goal functions
+    $scope.startAddGoal = startAddGoal;
+    $scope.addGoal = addGoal;
+    $scope.cancelGoalWork = cancelGoalWork;
+    $scope.addGoal = addGoal;
+    $scope.startEditGoal = startEditGoal;
+    $scope.saveGoal= saveGoal;
+    $scope.startRemoveGoal = startRemoveGoal;
+    $scope.removeGoal = removeGoal;
+    var startAddGoal = function() {}
+    var addGoal = function() {}
+    var cancelGoalWork = function() {}
+    var addGoal = function() {}
+    var startEditGoal = function() {}
+    var saveGoal = function() {}
+    var startRemoveGoal = function() {}
+    var removeGoal = function() {}
+
+    
+
+    
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
   // To listen for when this page is active (for example, to refresh data),
