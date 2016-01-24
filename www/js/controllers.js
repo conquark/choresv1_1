@@ -1,7 +1,16 @@
 angular.module('starter.controllers', [])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
-
+    
+    // Family ///////////////////////
+        // Family Members Array
+        $scope.allMembers = {};
+    
+        // Logged in Member
+        $scope.user = {};
+        $scope.userChores = {};
+        $scope.userGoals = {};
+    
     // Family functions
     $scope.addFamilyMember = addFamilyMember;
     $scope.editFamilyMember = editFamilyMember;
@@ -12,7 +21,11 @@ angular.module('starter.controllers', [])
     var deleteFamilyMember = function(){}
     var payFamilyMember = function(){}
     
-    
+    // Chores /////////////////////////
+    // Chore containers
+    $scope.chorePool = {};
+        // not sure if this is needed
+        $scope.currentChore = {};
     // Chore functions
     $scope.startAddChore  = startAddChore;
     $scope.cancelChoreWork = cancelChoreWork;
